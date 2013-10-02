@@ -1,28 +1,3 @@
-<style>
-code {
-background-color: #eeeeee;
-}
-pre code {
-display: block;
-border: dashed 1px black;
-padding: 0.5em;
-}
-hr {
-margin-top: 3em;
-}
-th {
-text-align: left;
-}
-h4 {
-margin-bottom: 0px;
-}
-p {
-margin-top: 0px;
-}
-</style>
-
-
-
 Digital Waybill API Documentation
 =================================
 
@@ -233,10 +208,10 @@ using this method, the value for the response's `body` key will contain the
 following structure:
 
     {
-      "count" : number\_of\_orders\_in\_response,
-      "page\_number" : page\_number\_within\_paginated\_result\_set,
-      "page\_size" : number\_of\_orders\_per\_page,
-      "orders" : [array\_of\_Order\_objects]
+      "count" : number_of_orders_in_response,
+      "page_number" : page_number_within_paginated_result_set,
+      "page_size" : number_of_orders_per_page,
+      "orders" : [array_of_Order_objects]
     }
 
 If the URI is given with no additional query parameters (`/{CID}/orders.json`), 
@@ -302,19 +277,19 @@ below:
 
 
     {
-        "customer\_number" : String,
-        "cost\_center" : String,
-        "order\_type" : String,
-        "ready\_time" : String,
-        "round\_trip" : Boolean,
-        "route\_stops" : [
+        "customer_number" : String,
+        "cost_center" : String,
+        "order_type" : String,
+        "ready_time" : String,
+        "round_trip" : Boolean,
+        "route_stops" : [
             {
                 "company" : String,
                 "address" : String,
                 "suite" : String,
                 "city" : String,
                 "state" : String,
-                "postal\_code" : String,
+                "postal_code" : String,
                 "country" : String,
                 "contact" : {
                     "name" : String,
@@ -327,17 +302,17 @@ below:
                 "suite" : String,
                 "city" : String,
                 "state" : String,
-                "postal\_code" : String,
+                "postal_code" : String,
                 "country" : String,
                 "contact" : {
                     "name" : String,
                     "phone" : String
                 },
                 "notes" : String,
-                "special\_instructions" : String,
-                "service\_type" : String,
+                "special_instructions" : String,
+                "service_type" : String,
                 "package" : String,
-                "number\_of\_pieces" : Integer,
+                "number_of_pieces" : Integer,
                 "weight" : Integer,
                 "vehicle" : String
             }
@@ -641,21 +616,21 @@ The `Order` type describes an order:
 
     {
         "time" : Date,
-        "order\_number" : Integer,
+        "order_number" : Integer,
         "price" : Float,
-        "customer\_number" : String,
-        "cost\_center" : String,
-        "final\_price" : Float,
+        "customer_number" : String,
+        "cost_center" : String,
+        "final_price" : Float,
         "pending" : Boolean,
         "origin" : Origin,
-        "status\_date" : Date,
-        "ready\_time" : Date,
-        "deliver\_by" : Date,
-        "dispatch\_driver" : String,
+        "status_date" : Date,
+        "ready_time" : Date,
+        "deliver_by" : Date,
+        "dispatch_driver" : String,
         "version" : String,
         "status" : Status,
-        "order\_type" : OrderType,
-        "route\_stops" : Array,
+        "order_type" : OrderType,
+        "route_stops" : Array,
     }
 
 <table border="1" cellpadding="3">
@@ -762,7 +737,7 @@ The `PickupStop` type describes pickup stop for a non-route order:
         "suite" : String,
         "city" : String,
         "state" : String,
-        "postal\_code" : String,
+        "postal_code" : String,
         "country" : String,
         "contact" : Contact
     }
@@ -830,33 +805,33 @@ For example, the following is a complete URL to a valid signature image:
         "suite" : String,
         "city" : String,
         "state" : String,
-        "postal\_code" : String,
+        "postal_code" : String,
         "country" : String,
         "contact" : Contact,
-        "paper\_waybill" : String,
-        "special\_instructions" : String,
-        "service\_type" : String,
+        "paper_waybill" : String,
+        "special_instructions" : String,
+        "service_type" : String,
         "package" : String,
-        "number\_of\_pieces" : Integer,
+        "number_of_pieces" : Integer,
         "weight" : Integer,
         "packages" : Array<Package>,
         "vehicle" : String,
-        "driver\_number" : String,
-        "dispatch\_message" : String,
+        "driver_number" : String,
+        "dispatch_message" : String,
         "notes" : String,
         "signature" : String,
-        "signature\_contact" : String,
+        "signature_contact" : String,
         "reference" : String,
         "distance" : Integer
-        "air\_distance" : Integer
-        "driver\_pricelist" : String,
-        "receive\_date" : Date,
-        "dispatch\_date" : Date,
-        "pickup\_date" : Date,
-        "delivery\_date" : Date,
-        "cancel\_date" : Date,
-        "confirm\_date" : Date
-        "route\_stop\_id" : Integer
+        "air_distance" : Integer
+        "driver_pricelist" : String,
+        "receive_date" : Date,
+        "dispatch_date" : Date,
+        "pickup_date" : Date,
+        "delivery_date" : Date,
+        "cancel_date" : Date,
+        "confirm_date" : Date
+        "route_stop_id" : Integer
     }
 
 
@@ -1002,7 +977,7 @@ The `Package` type describes a package:
 
     {
         "package" : String,
-        "number\_of\_pieces" : Integer,
+        "number_of_pieces" : Integer,
         "weight" : Integer
     }
 
