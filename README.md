@@ -131,9 +131,9 @@ panel is runnning and has successfully connected to Digital Waybill's servers)
 will receive an HTTP response with a JSON-encoded body with this top-level format:
 
     {
-      "status" : status\_code,
-      "error" : error\_message,
-      "body" : body\_content
+      "status" : status_code,
+      "error" : error_message,
+      "body" : body_content
     }
 
 <table border="1" cellpadding="3">
