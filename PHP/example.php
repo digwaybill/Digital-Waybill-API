@@ -33,17 +33,20 @@ $ds->contactPhone = 'N/A';
 
 $ds->serviceType = 'Emergency';
 $ds->package = 'Medicine';
-$ds->vehicle = 'v2';
+$ds->vehicle = '';
 $ds->weight = 100;
 $ds->numberOfPieces = 200;
 $ds->specialInstructions = 'special instructions';
 $ds->notes = 'my notes';
 
-try {
+try 
+{
     $order->setPickup($ps);
     $order->setDeliver($ds);
 
-    $cid = 2000105850;
+    //$cid = 2000105850;
+    //$key = 'f1d621905cece65bcbbb5018adacdd39adacdd39';
+    $cid = 2000092670;
     $key = 'f1d621905cece65bcbbb5018adacdd39adacdd39';
     $cnum = 'DYN833';
     $pass = 'pass';
@@ -52,7 +55,35 @@ try {
 
     $orderNumber = $order->send($auth);
     printf( "Successfully placed order #%d\n", $orderNumber );
-} catch( Exception $e )
+
+
+
+} 
+catch( DigitalWaybill\TemporaryServerError $e )
+{
+    printf( "TemporaryServerError: %s\n", $e->getMessage() );
+}
+catch( DigitalWaybill\FatalServerError $e )
+{
+    printf( "FatalServerError: %s\n", $e->getMessage() );
+}
+catch( DigitalWaybill\ValidationError $e )
+{
+    printf( "ValidationError: %s\n", $e->getMessage() );
+}
+catch( DigitalWaybill\NetworkError $e )
+{
+    printf( "NetworkError: %s\n", $e->getMessage() );
+}
+catch( DigitalWaybill\UnexpectedError $e )
+{
+    printf( "UnexpectedError: %s\n", $e->getMessage() );
+}
+catch( DigitalWaybill\AuthorizationError $e )
+{
+    printf( "AuthorizationError: %s\n", $e->getMessage() );
+}
+catch( Exception $e )
 {
     printf( "An exception occurred: %s\n", $e->getMessage() );
 }
