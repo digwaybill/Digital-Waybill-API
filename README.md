@@ -99,7 +99,7 @@ query string.
   <td>The RemotePanel or QuickEntry API key. Required.</td>
 </tr>
 <tr>
-  <td>customer\_number</td>
+  <td>customer_number</td>
   <td>The client's customer number. Required only if the API key is for QuickEntry access. Ignored otherwise.</td>
 </tr>
 <tr>
