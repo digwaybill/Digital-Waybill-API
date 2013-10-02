@@ -994,15 +994,15 @@ The `Package` type describes a package:
   <th>Description</th>
 </tr>
 <tr>
-  <th>package</th>
-  <th>Package type</th>
+  <td>package</td>
+  <td>Package type</td>
 </tr>
 <tr>
-  <th>number_of_pieces</th>
-  <th>Number of pieces of this package type</th>
+  <td>number_of_pieces</td>
+  <td>Number of pieces of this package type</td>
 </tr>
 <tr>
-  <th>weight</th>
-  <th>Weight of each piece of this package type</th>
+  <td>weight</td>
+  <td>Weight of each piece of this package type</td>
 </tr>
 </table>
