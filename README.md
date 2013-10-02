@@ -326,28 +326,28 @@ below:
   <th>Description</th>
 </tr>
 <tr>
-  <td>customer\_number</td>
+  <td>customer_number</td>
   <td>The customer number for this order.</td>
 </tr>
 <tr>
-  <td>cost\_center</td>
+  <td>cost_center</td>
   <td>The cost center for this order. Must be a cost center under the given
-  customer\_number.</td>
+  customer_number.</td>
 </tr>
 <tr>
-  <td>order\_type</td>
+  <td>order_type</td>
   <td>The order's type. May be "Pickup", "Deliver", or "Third-Party".</td>
 </tr>
 <tr>
-  <td>ready\_time</td>
+  <td>ready_time</td>
   <td>The time at which the package(s) will be ready for pickup.</td>
 </tr>
 <tr>
-  <td>round\_trip</td>
+  <td>round_trip</td>
   <td>True if a round-trip order.</td>
 </tr>
 <tr>
-  <td>route\_stops</td>
+  <td>route_stops</td>
   <td>An array with two elements. The first element contains the pickup stop
   information, and the second contains the deliver stop information. These
   objects are described in the next table.</td>
@@ -381,7 +381,7 @@ The first item in the route\_stops array is a PickupStop object:
   <td>State</td>
 </tr>
 <tr>
-  <td>postal\_code</td>
+  <td>postal_code</td>
   <td>Postal code/Zip code</td>
 </tr>
 <tr>
@@ -425,7 +425,7 @@ The second item in the route\_stops array is a DeliverStop object:
   <td>State</td>
 </tr>
 <tr>
-  <td>postal\_code</td>
+  <td>postal_code</td>
   <td>Postal code/Zip code</td>
 </tr>
 <tr>
@@ -445,11 +445,11 @@ The second item in the route\_stops array is a DeliverStop object:
   <td>Notes for this order</td>
 </tr>
 <tr>
-  <td>special\_instructions</td>
+  <td>special_instructions</td>
   <td>Special instructions for this order</td>
 </tr>
 <tr>
-  <td>service\_type</td>
+  <td>service_type</td>
   <td>The service type for this order</td>
 </tr>
 <tr>
@@ -458,7 +458,7 @@ The second item in the route\_stops array is a DeliverStop object:
   at this time)</td>
 </tr>
 <tr>
-  <td>number\_of\_pieces</td>
+  <td>number_of_pieces</td>
   <td>The number of pieces for this package type for this order</td>
 </tr>
 <tr>
@@ -482,7 +482,7 @@ Possible status codes for this method include:
   <td>200 OK</td>
   <td>Order was placed successfully. The resulting order number is returned in
   the response. This order number can be used with the
-  <code>/{CID}/orders.json/{order\_number}</code> method to confirm details, get price,
+  <code>/{CID}/orders.json/{order_number}</code> method to confirm details, get price,
   etc.</td>
 </tr>
 <tr>
@@ -643,19 +643,19 @@ The `Order` type describes an order:
   <td>The time the order was placed.</td>
 </tr>
 <tr>
-  <td>order\_number</td>
+  <td>order_number</td>
   <td>The order number.</td>
 </tr>
 <tr>
-  <td>customer\_number</td>
+  <td>customer_number</td>
   <td>The customer number attached to the order.</td>
 </tr>
 <tr>
-  <td>cost\_center</td>
+  <td>cost_center</td>
   <td>The cost center attached to the order.</td>
 </tr>
 <tr>
-  <td>final\_price</td>
+  <td>final_price</td>
   <td>The order's price.</td>
 </tr>
 <tr>
@@ -667,19 +667,19 @@ The `Order` type describes an order:
   <td>The order's origin.</td>
 </tr>
 <tr>
-  <td>status\_date</td>
+  <td>status_date</td>
   <td>Time of order's last change in status.</td>
 </tr>
 <tr>
-  <td>ready\_time</td>
+  <td>ready_time</td>
   <td>The ready for pickup time for the order.</td>
 </tr>
 <tr>
-  <td>deliver\_by</td>
+  <td>deliver_by</td>
   <td>The deliver by time for the order.</td>
 </tr>
 <tr>
-  <td>dispatch\_driver</td>
+  <td>dispatch_driver</td>
   <td>Driver to which this order is dispatched.</td>
 </tr>
 <tr>
@@ -691,11 +691,11 @@ The `Order` type describes an order:
   <td>The order's current status.</td>
 </tr>
 <tr>
-  <td>order\_type</td>
+  <td>order_type</td>
   <td>The order's type.</td>
 </tr>
 <tr>
-  <td>route\_stops</td>
+  <td>route_stops</td>
   <td>An array of PickupStop/DeliverStop objects. For non-route orders, the
   array will contain two elements: the first will be a PickupStop object, and
   the second will be a DeliverStop object. For route orders, the array will
@@ -768,7 +768,7 @@ The `PickupStop` type describes pickup stop for a non-route order:
   <td>State</td>
 </tr>
 <tr>
-  <td>postal\_code</td>
+  <td>postal_code</td>
   <td>Postal code/Zip code</td>
 </tr>
 <tr>
@@ -862,7 +862,7 @@ For example, the following is a complete URL to a valid signature image:
   <td>State</td>
 </tr>
 <tr>
-  <td>postal\_code</td>
+  <td>postal_code</td>
   <td>Postal code/Zip code</td>
 </tr>
 <tr>
@@ -874,15 +874,15 @@ For example, the following is a complete URL to a valid signature image:
   <td>Point of contact</td>
 </tr>
 <tr>
-  <td>paper\_waybill</td>
+  <td>paper_waybill</td>
   <td>Paper waybill number</td>
 </tr>
 <tr>
-  <td>special\_instructions</td>
+  <td>special_instructions</td>
   <td>Special instructions</td>
 </tr>
 <tr>
-  <td>service\_type</td>
+  <td>service_type</td>
   <td>Service type</td>
 </tr>
 <tr>
@@ -890,7 +890,7 @@ For example, the following is a complete URL to a valid signature image:
   <td>Package type of first package in this stop</td>
 </tr>
 <tr>
-  <td>number\_of\_pieces</td>
+  <td>number_of_pieces</td>
   <td>Number of pieces for the first package in this stop</td>
 </tr>
 <tr>
@@ -906,11 +906,11 @@ For example, the following is a complete URL to a valid signature image:
   <td>Vehicle type</td>
 </tr>
 <tr>
-  <td>driver\_number</td>
+  <td>driver_number</td>
   <td>Dispatched driver's driver number</td>
 </tr>
 <tr>
-  <td>dispatch\_message</td>
+  <td>dispatch_message</td>
   <td>Dispatch message for driver</td>
 </tr>
 <tr>
@@ -923,7 +923,7 @@ For example, the following is a complete URL to a valid signature image:
   the SVG image of the signature.</td>
 </tr>
 <tr>
-  <td>signature\_contact</td>
+  <td>signature_contact</td>
   <td>Signature contact</td>
 </tr>
 <tr>
@@ -935,39 +935,39 @@ For example, the following is a complete URL to a valid signature image:
   <td>Street distance in meters</td>
 </tr>
 <tr>
-  <td>air\_distance</td>
+  <td>air_distance</td>
   <td>Straight-line distance is meters</td>
 </tr>
 <tr>
-  <td>driver\_pricelist</td>
+  <td>driver_pricelist</td>
   <td>Driver pricelist for this stop</td>
 </tr>
 <tr>
-  <td>receive\_date</td>
+  <td>receive_date</td>
   <td>Date the order was received</td>
 </tr>
 <tr>
-  <td>dispatch\_date</td>
+  <td>dispatch_date</td>
   <td>Date the order was dispatched</td>
 </tr>
 <tr>
-  <td>pickup\_date</td>
+  <td>pickup_date</td>
   <td>Date the order was picked up</td>
 </tr>
 <tr>
-  <td>delivery\_date</td>
+  <td>delivery_date</td>
   <td>Date the order was delivered</td>
 </tr>
 <tr>
-  <td>cancel\_date</td>
+  <td>cancel_date</td>
   <td>Date the order was canceled</td>
 </tr>
 <tr>
-  <td>confirm\_date</td>
+  <td>confirm_date</td>
   <td>Date the order was acknowledged and accepted by the driver</td>
 </tr>
 <tr>
-  <td>route\_stop\_id</td>
+  <td>route_stop_id</td>
   <td>Route stop ID</td>
 </tr>
 </table>
@@ -991,7 +991,7 @@ The `Package` type describes a package:
   <th>Package type</th>
 </tr>
 <tr>
-  <th>number\_of\_pieces</th>
+  <th>number_of_pieces</th>
   <th>Number of pieces of this package type</th>
 </tr>
 <tr>
@@ -999,17 +999,3 @@ The `Package` type describes a package:
   <th>Weight of each piece of this package type</th>
 </tr>
 </table>
-
-
-
-
---------------------------------------------------------------------------------
-Change Log
-----------
-
-### Tuesday, February 26, 2013
-Newer order panels will support orders with multiple packages as well as vehicle
-types. Updated documentation for placing orders and JSON types section.
-
-### Monday, May 13, 2013
-Added documentation for SVG signature data.
