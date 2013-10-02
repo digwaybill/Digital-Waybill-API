@@ -44,9 +44,7 @@ try
     $order->setPickup($ps);
     $order->setDeliver($ds);
 
-    //$cid = 2000105850;
-    //$key = 'f1d621905cece65bcbbb5018adacdd39adacdd39';
-    $cid = 2000092670;
+    $cid = 2000105850;
     $key = 'f1d621905cece65bcbbb5018adacdd39adacdd39';
     $cnum = 'DYN833';
     $pass = 'pass';
@@ -55,9 +53,6 @@ try
 
     $orderNumber = $order->send($auth);
     printf( "Successfully placed order #%d\n", $orderNumber );
-
-
-
 } 
 catch( DigitalWaybill\TemporaryServerError $e )
 {
