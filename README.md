@@ -13,6 +13,13 @@ directly through the OrderPanel itself, or through other Digital Waybill client
 software such as the RemotePanel, QuickEntry, and 2-Way apps.
 
 --------------------------------------------------------------------------------
+Language-Specific Libraries and Examples
+----------------------------------------
+
+Language-specific libraries and examples of implementation of the Digital Waybill
+API can be found in the subdirectories of this repository.
+
+--------------------------------------------------------------------------------
 Authentication
 --------------
 
