@@ -212,7 +212,11 @@ class DeliverStop extends PickupStop
         $obj->package = $this->package;
         $obj->number_of_pieces = $this->numberOfPieces;
         $obj->weight = $this->weight;
-        $obj->vehicle = $this->vehicle;
+
+        if( strlen($this->vehicle) > 0 )
+        {
+            $obj->vehicle = $this->vehicle;
+        }
 
         return $obj;
     }
