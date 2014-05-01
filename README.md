@@ -216,7 +216,7 @@ following structure:
 
     {
       "count" : number_of_orders_in_response,
-      "page_number" : page_number_within_paginated_result_set,
+      "page_num" : page_number_within_paginated_result_set,
       "page_size" : number_of_orders_per_page,
       "orders" : [array_of_Order_objects]
     }
@@ -228,16 +228,16 @@ QuickEntry API keys, this will include all orders for the corresponding
 customer.
 
 To retrieve details for a specific order, you may include the order number
-directly in the URI. For example, to retrieve details for order number 12345,
+directly in the URI. For example, to retrieve details fdor order number 12345,
 your request URI would be `/{CID}/orders.json/12345`.
 
 Result sets may be very large. To avoid excessive load on both the client and
 server side, results can be paginated and retrieved through multiple requests.
 To paginate a result set, use the query parameters `page_size` and
-`page_number`. `page_size` is an optional parameter that specifies how many
+`page_num`. `page_size` is an optional parameter that specifies how many
 orders should be returned per page. If the parameter is too large or is omitted, 
 a default maximum page size may be enforced. The actual page size is returned as
-part of the response. The `page_number` parameter specifies which page of the
+part of the response. The `page_num` parameter specifies which page of the
 result set you are requesting. The first page of a paginated result set is page 1. 
 The page number is also returned as part of the response. All result sets
 include the `count` parameter, which indicates the full size of the paginated 
@@ -541,7 +541,7 @@ The `OrderType` type is an enumeration including the following values:
   <td>The order's cost center is attached to the pickup stop.</td>
 </tr>
 <tr>
-  <td>Deliver</td>
+  <td>Delivery</td>
   <td>The order's cost center is attached to the delivery stop.</td>
 </tr>
 <tr>
