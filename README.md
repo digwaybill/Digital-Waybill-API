@@ -343,7 +343,7 @@ below:
 </tr>
 <tr>
   <td>order_type</td>
-  <td>The order's type. May be "Pickup", "Deliver", or "Third-Party".</td>
+  <td>The order's type. May be "Pickup", "Delivery", or "Third-Party".</td>
 </tr>
 <tr>
   <td>ready_time</td>
