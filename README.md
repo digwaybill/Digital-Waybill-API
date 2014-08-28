@@ -158,7 +158,7 @@ will receive an HTTP response with a JSON-encoded body with this top-level forma
 </tr>
 <tr>
   <td>body</td>
-  <td>Value will contain the requested information for successfull requests.</td>
+  <td>Value will contain the requested information for successful requests.</td>
 </tr>
 </table>
 
@@ -228,7 +228,7 @@ QuickEntry API keys, this will include all orders for the corresponding
 customer.
 
 To retrieve details for a specific order, you may include the order number
-directly in the URI. For example, to retrieve details fdor order number 12345,
+directly in the URI. For example, to retrieve details for order number 12345,
 your request URI would be `/{CID}/orders.json/12345`.
 
 Result sets may be very large. To avoid excessive load on both the client and
