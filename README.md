@@ -316,6 +316,7 @@ below:
                     "phone" : String
                 },
                 "notes" : String,
+                "reference" : String,
                 "special_instructions" : String,
                 "service_type" : String,
                 "package" : String,
