@@ -549,11 +549,6 @@ The `OrderType` type is an enumeration including the following values:
   <td>Third-Party</td>
   <td>The order's cost center is not attached to any of the stops.</td>
 </tr>
-<tr>
-  <td>Route</td>
-  <td>The order is a route. The cost center may or may not be associated with
-  any of the route stops.</td>
-</tr>
 </table>
 
 ### Origin
