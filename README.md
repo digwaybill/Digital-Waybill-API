@@ -268,6 +268,32 @@ Possible status codes for this method include:
 </tr>
 </table>
 
+### Retrieving Valid Package Types
+Valid package types can be retrieved using the GET `/packages.json` method. When
+using this method, the value for the response's `body` key will contain the
+following structure:
+
+    {
+      "packages": [array_of_valid_package_types]
+    }
+
+Possible status codes for this method include:
+
+<table border="1" cellpadding="3">
+<tr>
+  <th>Status Code</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td>200 OK</td>
+  <td>Success</td>
+</tr>
+<tr>
+  <td>503 Service Unavailable</td>
+  <td>The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.</td>
+</tr>
+</table>
+
 
 --------------------------------------------------------------------------------
 POST Methods
