@@ -277,6 +277,15 @@ following structure:
       "packages": [array_of_valid_package_types]
     }
 
+### Retrieving Valid Service Types
+Valid package types can be retrieved using the GET `/service_types.json` method. When
+using this method, the value for the response's `body` key will contain the
+following structure:
+
+    {
+      "service_types": [array_of_valid_service_types]
+    }
+
 Possible status codes for this method include:
 
 <table border="1" cellpadding="3">
