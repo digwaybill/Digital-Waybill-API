@@ -107,7 +107,7 @@ query string.
 </tr>
 <tr>
   <td>customer_number</td>
-  <td>The client's customer number. Required only if the API key is for QuickEntry access. Ignored otherwise.</td>
+  <td>The client's customer number. Required only if the API key is for QuickEntry access. Ignored otherwise. (case-sensitive)</td>
 </tr>
 <tr>
   <td>password</td>
@@ -355,7 +355,7 @@ below:
                 "special_instructions" : String,
                 "service_type" : String,
                 "package" : String,
-                "number_of_pieces" : Integer,
+                "number_of_pieces" : String,
                 "weight" : Integer,
                 "vehicle" : String
             }
@@ -850,7 +850,7 @@ For example, the following is a complete URL to a valid signature image:
         "special_instructions" : String,
         "service_type" : String,
         "package" : String,
-        "number_of_pieces" : Integer,
+        "number_of_pieces" : String,
         "weight" : Integer,
         "packages" : Array<Package>,
         "vehicle" : String,
@@ -1015,7 +1015,7 @@ The `Package` type describes a package:
 
     {
         "package" : String,
-        "number_of_pieces" : Integer,
+        "number_of_pieces" : String,
         "weight" : Integer
     }
 
